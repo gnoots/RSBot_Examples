@@ -10,9 +10,9 @@ If a script seems to be missing an explanation for something important, check th
 
         • Fighter: Basic interaction, nodes, combat, looting, banking, walking.
         • Miner: SceneObject interaction, simple paint drawing, dropping items.
-        • Smithing: Widget interaction, Enums, Dynamic sleeps, bank withdrawing, MessageListener.
+        • Smithing: Widget interaction, enums, dynamic sleeps, bank withdrawing, MessageListener.
         • Firemaker: Paint GUI, MouseListener.
-        • Alchemy: Ability/hotkey use, Time till level & Exp/hr, getting item prices, MessageListener regex.
+        • Alchemy: Ability/hotkey use, time till level & exp/hr, getting item prices, MessageListener regex.
 
 
 Note: none of these scripts are intended to be flawless. While the scripts should work without much trouble, any quirks are left for you to iron out.
