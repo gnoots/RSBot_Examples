@@ -13,6 +13,7 @@ If a script seems to be missing an explanation for something important, check th
         • Smithing: Widget interaction, enums, dynamic sleeps, bank withdrawing, MessageListener.
         • Firemaker: Paint GUI, MouseListener.
         • Alchemy: Ability/hotkey use, time till level & exp/hr, getting item prices, MessageListener regex.
+        • Fisher: More paint drawing, mouse trails.
 
 
 Note: none of these scripts are intended to be flawless. While the scripts should work without much trouble, any quirks are left for you to iron out.
