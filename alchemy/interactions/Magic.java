@@ -79,11 +79,15 @@ public class Magic {
      */
 
     public static boolean useAbilityKey(char ch) {
+        // If our ability bar is up, we want to continue.
         if (isAbilityBarUp()) {
+            // We will press our key, wait for a small amount of time and then release it.
             Keyboard.pressKey(ch, Random.nextInt(75, 125), 0);
             Keyboard.releaseKey(ch, Random.nextInt(75, 125), 0);
+            // Return true if we've succeeded.
             return true;
         }
+        // Return false if we haven't been able to do the above.
         return false;
     }
 
@@ -94,14 +98,27 @@ public class Magic {
      */
 
     public static boolean alchemiseItem(double delay) {
+        // The item we want to alchemise.
         Item item = getItem();
-
+        // We only want to continue if we have an item.
         if (item != null) {
+            // Since useAbilityKey and #interact return a boolean, we can use an if statement with them.
+            // if(useAbilityKey && item.interact) will return true if both actions are successful.
             if (useAbilityKey('1') && item.getWidgetChild().interact("Cast", "High Level Alchemy -> " + item.getName())) {
+                /*
+                 Sleep for a random amount of time before returning true. This is just to help alleviate
+                 any spam clicking before the alchemy animation starts.
+
+                 Random.nextGaussian uses normal distribution to return a more human-like random behavior.
+                 Look up "normal distribution" for more information. While using nextGaussian over
+                 nextInt isn't necessary in most cases, it can't hurt.
+                 */
                 Task.sleep(Random.nextGaussian((int) (delay*0.8), (int) (delay*1.2), (int) (delay*0.3)));
+                // Return true if we've successfully alchemised an item.
                 return true;
             }
         }
+        // Return false if we haven't been able to do any of the above.
         return false;
     }
 
