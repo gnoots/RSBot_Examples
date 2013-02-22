@@ -1,4 +1,4 @@
-package smithing.utils;
+package fisher.utils;
 
 import org.powerbot.core.script.job.Task;
 import org.powerbot.game.api.methods.Tabs;
@@ -15,8 +15,6 @@ import org.powerbot.game.api.wrappers.widget.WidgetChild;
  * @version 1.0
  * @since RSBot 4049
  */
-
-
 public enum Lodestone {
 
     LUMBRIDGE(47, 69836),

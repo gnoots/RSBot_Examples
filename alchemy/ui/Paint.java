@@ -49,7 +49,7 @@ public class Paint {
 
         // Draws our large title of "Alchemy".
         g.setFont(LARGE_FONT);
-        g.setColor(Color.CYAN.darker());
+        g.setColor(Color.YELLOW);
         g.drawString("Alchemy", 25, 110);
 
         // Draws some information on top of our rectangle in a smaller font.

@@ -3,6 +3,8 @@ alchemy.utils
 fighter.interactions
 firemaker.interactions
 firemaker.utils
+fisher.interactions
+fisher.utils
 miner.interactions
 smithing.interactions
 smithing.utils
